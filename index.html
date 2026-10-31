@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.className = "js";</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Leikpyar Hunters - Spectral Agents</title>
+  <script src="/js/guard.js?v=93444072"></script>
+  <meta name="description" content="Leikpyar Hunters: a Myanmar horror game. Work the night shift as a spectral agent: scan the house, pull the orbs with the Phantom Gun, seal the souls and climb the leaderboard.">
+  <meta name="theme-color" content="#0b0705">
+  <meta property="og:title" content="Leikpyar Hunters - Spectral Agents">
+  <meta property="og:description" content="A Myanmar horror game. Survive the night. Catch the souls. Play in your browser on phone or PC.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Leikpyar Hunters">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Leikpyar Hunters - Spectral Agents, a Myanmar horror game">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leikpyar Hunters - Spectral Agents">
+  <meta name="twitter:description" content="A Myanmar horror game. Survive the night. Catch the souls. Play in your browser on phone or PC.">
+  <link rel="icon" href="/uploads/1cee8265eb79.png" sizes="any">
+  <link rel="icon" href="/uploads/1cee8265eb79.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/uploads/1cee8265eb79.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/uploads/1cee8265eb79.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" href="/fonts/DMSans-latin.woff2?v=89c7ce3aaf" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css?v=93444072">
+</head>
+<body>
+
+<!-- the icons (one sprite, stroke style) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 12 19 5"/></symbol>
+    <symbol id="i-crosshair" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v11M7 10l5 5 5-5M4.5 20.5h15"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19.5 7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2 20 3M16 7l3 3"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/></symbol>
+    <symbol id="i-ghost" viewBox="0 0 24 24"><path d="M5 21V11a7 7 0 0 1 14 0v10l-3.5-2.5L12 21l-3.5-2.5z"/><path d="M9.5 11h.01M14.5 11h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-male" viewBox="0 0 24 24"><circle cx="10" cy="14" r="5.5"/><path d="M14 10 20.500 3.500M15 3.500h5.500V9"/></symbol>
+    <symbol id="i-female" viewBox="0 0 24 24"><circle cx="12" cy="8.500" r="5.500"/><path d="M12 14v7.500M8.500 18h7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 21h8M12 16.5V21"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5.5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2H9M16 17l5-5-5-5M21 12H9"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6.5 10h.01M10 10h.01M14 10h.01M17.5 10h.01M7 14h10"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3 3.5 7.5v9L12 21l8.5-4.5v-9z"/><path d="M12 12 3.5 7.5M12 12l8.5-4.5M12 12v9"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 21c4 0 6.5-2.6 6.5-6 0-2.2-1.2-3.8-2.5-5.2-.6 1.2-1.4 1.7-2.2 1.7 0-3-1.6-5.6-3.8-7.5C10.5 7.700 6 10.500 6 15c0 3.400 2.500 6 6 6z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><rect x="3.5" y="7.5" width="17" height="12.5" rx="2.2"/><path d="M8.500 7.500V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.500M3.500 13h17"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.500h.01"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4.500h6V7M6.500 7l1 13h9l1-13M10 11v5M14 11v5"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#hero" aria-label="Leikpyar Hunters, home">
+      <img class="brand-mark" src="/uploads/1cee8265eb79.png" alt="" width="40" height="40" decoding="async" draggable="false">
+      <span class="brand-text">Leikpyar <b>Hunters</b></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#staytuned">Stay tuned</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#license">Credits</a>
+      <a href="#rights">License</a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang" role="group" aria-label="Language" data-no-i18n>
+        <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang="my" aria-pressed="false" lang="my">MM</button>
+      </div>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="nav">
+        <svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO ---------------------------------------------------------------------------------- -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div>
+      <canvas id="dust"></canvas>
+      <div class="grain"></div>
+      <div class="vignette"></div>
+    </div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-moon"/></svg>A Myanmar horror game</p>
+        <h1 class="hero-title">Leikpyar<span> Hunters</span></h1>
+        <p class="hero-sub">You are a spectral agent on the night shift. Scan the old house, pull the glowing souls out of the dark, seal them and survive until dawn.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#gallery"><svg class="ico" aria-hidden="true"><use href="#i-cube"/></svg>View the gallery</a>
+          <a class="btn btn-ghost" href="#license"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg>Credits</a>
+        </div>
+        <p class="promo-note"><i aria-hidden="true"></i>Promotional preview. Stay tuned.</p>
+        <ul class="hero-meta" aria-label="Facts">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-cube"/></svg>3D models</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ghost"/></svg>Horror</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg>Four creators</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-flame"/></svg>Made in Myanmar</li>
+        </ul>
+      </div>
+
+      <div class="hero-art">
+        <div class="frame">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <model-viewer id="heroOrb" class="viewer hero-view on" orientation="0deg -90deg 0deg" alt="A 3D model of the game"
+            auto-rotate rotation-per-second="22deg" interaction-prompt="none" disable-zoom disable-pan
+            shadow-intensity="0" exposure="0.6" environment-image="neutral"
+            camera-orbit="30deg 78deg auto" loading="eager" reveal="auto"></model-viewer>
+          <div class="frame-tag"><svg class="ico" aria-hidden="true"><use href="#i-ghost"/></svg>Loading</div>
+          <div class="frame-credit">Model by May Thinzar Khin</div>
+          <div class="frame-dots" id="heroDots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- STAY TUNED ------------------------------------------------------------------------- -->
+  <section class="section alt" id="staytuned">
+    <div class="wrap staytuned">
+      <div class="stay-poster reveal">
+        <img src="/img/poster.webp" alt="Leikpyar Hunters (Spectral Agents) poster: Spells are obsolete. Science is the new hunt." width="600" height="800" loading="lazy" decoding="async" draggable="false">
+      </div>
+      <div class="stay-copy reveal">
+        <p class="stay-tag"><i aria-hidden="true"></i>Coming soon</p>
+        <h2>Stay tuned</h2>
+        <p class="stay-quote">Spells are obsolete. Science is the new hunt.</p>
+        <p class="lead">Leikpyar Hunters (Spectral Agents) is a Myanmar horror game made for the Myanmar Game Jam 2026. This website is promotional content: look at the art and meet the team while you wait.</p>
+        <ul class="stay-list">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-moon"/></svg>1980s Myanmar</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-radar"/></svg>Science meets the spirit world</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ghost"/></svg>Myanmar Game Jam 2026</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY ------------------------------------------------------------------------------- -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Art from the house</h2>
+        <p class="lead">The house and the props of the game were modeled by May Thinzar Khin. Turn them with your finger or the mouse.</p>
+      </header>
+
+      <div class="gallery" id="gallery-grid" aria-live="polite"></div>
+
+      <p class="note center reveal"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg><span>Protected art. All rights reserved, see the <a href="#rights">license</a>.</span></p>
+    </div>
+  </section>
+
+  <!-- LICENSE ------------------------------------------------------------------------------- -->
+  <section class="section alt" id="license">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Credits and license</p>
+        <h2>The work belongs to the people who made it</h2>
+        <p class="lead">Every creator keeps the rights to their own work. Please respect it.</p>
+      </header>
+
+      <div class="creators reveal" aria-label="Creators">
+        <article class="creator" data-slot="game-designer">
+          <img src="/uploads/cc5b4d3e52fa.webp" alt="Avatar of the game designer" width="360" height="360" loading="lazy" decoding="async" draggable="false">
+          <div class="creator-body">
+            <span>Game designer</span>
+            <h3>Ayar Min</h3>
+            <p>The game design: the rules, the nights and how Spectral Agents plays.</p>
+            <small>&copy; 2026 Ayar Min. All rights reserved.</small>
+          </div>
+        </article>
+        <article class="creator" data-slot="sound">
+          <img src="/uploads/0a148affbc01.webp" alt="Avatar of the sound engineer" width="360" height="360" loading="lazy" decoding="async" draggable="false">
+          <div class="creator-body">
+            <span>Sound</span>
+            <h3>Wai Yan Min Thu</h3>
+            <p>The sound: the music, the voices and the sound effects.</p>
+            <small>&copy; 2026 Wai Yan Min Thu. All rights reserved.</small>
+          </div>
+        </article>
+        <article class="creator" data-slot="developer">
+          <img src="/uploads/978e12f58578.webp" alt="Avatar of the developer" width="360" height="360" loading="lazy" decoding="async" draggable="false">
+          <div class="creator-body">
+            <span>Developer</span>
+            <h3>Swan Htet</h3>
+            <p>The code: the game, this website, the Agent accounts and the leaderboard.</p>
+            <small>&copy; 2026 Swan Htet. All rights reserved.</small>
+          </div>
+        </article>
+        <article class="creator" data-slot="artist">
+          <img src="/uploads/32b63191c55a.webp" alt="Avatar of the 3D artist" width="360" height="360" loading="lazy" decoding="async" draggable="false">
+          <div class="creator-body">
+            <span>3D art</span>
+            <h3>May Thinzar Khin</h3>
+            <p>The 3D art: the GCC house, the props and the equipment, and the models in the gallery.</p>
+            <small>&copy; 2026 May Thinzar Khin. All rights reserved.</small>
+          </div>
+        </article>
+      </div>
+
+      <!-- special thanks: the admins add them in /admin/ (Photos and creators). A box can hold a list of sounds. -->
+      <div class="credits-more" id="specialThanks" hidden>
+        <h3 class="more-title">Special thanks</h3>
+        <div class="credits-grid thanks-grid" id="specialThanksGrid"></div>
+      </div>
+
+      <!-- more contributors: the admins add them in /admin/ (Photos and creators) -->
+      <div class="credits-more" id="moreCredits" hidden>
+        <h3 class="more-title">More contributors</h3>
+        <div class="credits-grid" id="moreCreditsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHTS: all rights reserved, liability, disclaimer ------------------------------------- -->
+  <section class="section" id="rights">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Legal</p>
+        <h2>Rights and responsibility</h2>
+        <p class="lead">Who owns the work, and what the game and this website do and do not promise.</p>
+      </header>
+
+      <div class="license reveal">
+        <div class="license-head">
+          <svg class="ico ico-lg" aria-hidden="true"><use href="#i-file"/></svg>
+          <div>
+            <h3>All rights reserved</h3>
+            <p>Leikpyar Hunters / Spectral Agents is made of the work of four creators. Each creator holds the copyright of their own part: the game design, the sound and music, the code, and the 3D models, textures and artwork (the GCC house, the EM unit, the MEP capsule, the Faraday cage, the injector, the scanner, the Phantom Gun and almost all the other models of the game).</p>
+          </div>
+        </div>
+        <div class="license-cols">
+          <div>
+            <h4><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>You may</h4>
+            <ul>
+              <li>View the models on this website, in your browser.</li>
+              <li>Play the game for your own enjoyment.</li>
+              <li>Share a link to this page.</li>
+              <li>Use screenshots of the page or the game in a review or a news post, and name the creators: game design by Ayar Min, sound by Wai Yan Min Thu, code by Swan Htet, art by May Thinzar Khin.</li>
+            </ul>
+          </div>
+          <div>
+            <h4><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg>You may not</h4>
+            <ul>
+              <li>Download, extract, copy, scrape, record or rip the models, textures, sounds, music, code or artwork from this website or from the game.</li>
+              <li>Copy, sell, share or republish any part of the work, in whole or in part.</li>
+              <li>Use the work in any other game, app, film, print or product, for money or not.</li>
+              <li>Use the work to train, tune or test any AI or machine learning model.</li>
+              <li>Remove the credits or the copyright notices.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><span id="licenseContact">To ask a creator for written permission, contact the team.</span></p>
+      </div>
+
+      <div class="legal-grid reveal">
+        <article class="legal-card" id="liability">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Liability</h3>
+          <ul>
+            <li>The game and this website are provided as they are. To the fullest extent the law allows, the creators and the team of Leikpyar Hunters are not liable for any loss or damage that comes from using them, such as lost game progress or scores, lost time, or a problem with your phone, computer or browser.</li>
+            <li>Keep your Agent password safe. You are responsible for what happens with your account.</li>
+            <li>An account that breaks the rules or cheats on the leaderboard may be blocked or deleted, and its scores may be removed.</li>
+            <li>Links to other websites are not under our control. We are not liable for what is on them.</li>
+            <li>Nothing here limits a right that the law does not allow to be limited.</li>
+          </ul>
+        </article>
+        <article class="legal-card" id="disclaimer">
+          <h3><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg>Disclaimer</h3>
+          <ul>
+            <li>Leikpyar Hunters is a work of fiction. The people, places, ghosts and events in it are made up. Any likeness to a real person, living or dead, or to a real place or event is by chance.</li>
+            <li>It is a horror game, with dark scenes, sudden sounds and frightening creatures. It is not for young children, or for people with a heart condition, epilepsy or who are easily frightened. Take breaks, and stop if you feel unwell.</li>
+            <li>The game does not mock or speak for any religion, belief, group or person.</li>
+            <li>Some models and sounds were made by other creators and are used with their licenses. They are named in the credits above.</li>
+            <li>Names of devices and companies in the game, such as GCC Medical, are made up and have no link to any real company.</li>
+            <li>This text is general information. It is not legal advice.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="#hero"><img class="brand-mark" src="/uploads/1cee8265eb79.png" alt="" width="40" height="40" decoding="async" draggable="false"><span class="brand-text">Leikpyar <b>Hunters</b></span></a>
+    <p>Spectral Agents &middot; Made in Myanmar</p>
+    <p class="small">Copyright &copy; 2026 Leikpyar Hunters. Each work belongs to its creator. All rights reserved.</p>
+    <p class="small">This website is promotional content. Stay tuned for the game.</p>
+    <p class="small"><a href="#rights">License</a> &middot; <a href="#liability">Liability</a> &middot; <a href="#disclaimer">Disclaimer</a></p>
+  </div>
+</footer>
+
+<!-- the background song and its disc (js/music.js) -->
+<div class="cd" id="cd" data-no-i18n>
+  <span class="cd-time" id="cdTime" aria-hidden="true">0:00 / 0:00</span>
+  <button class="cd-btn" id="cdBtn" type="button" aria-label="Pause the music" aria-pressed="false">
+    <svg class="cd-ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="cd-track" cx="50" cy="50" r="47"/><circle class="cd-bar" cx="50" cy="50" r="47"/></svg>
+    <img class="cd-disc" src="/img/cd.webp?v=f746a30a72" alt="" width="320" height="320" decoding="async" draggable="false">
+    <i class="cd-glyph" aria-hidden="true"></i>
+  </button>
+</div>
+<audio id="bgm" src="/audio/background.mp3?v=1" preload="auto" loop></audio>
+
+<script type="module" src="/vendor/model-viewer.min.js?v=a3a1835b4a"></script>
+<script>window.LH_CONTENT={"v":"32b197d295","texts":{"3D art":{"my":"၃ဖက်မြင် အနုပညာရှင်"},"A Myanmar horror game":{"my":"မြန်မာ သည်းထိတ်ရင်ဖိုဂိမ်း"},"A small cookie remembers which version you have.":{"my":"ကွတ်ကီးအသေးစားတစ်ခုက သင့်တွင် မည်သည့်ဗားရှင်း ရှိကြောင်း မှတ်ထားပါသည်။"},"Account":{"my":"အကောင့်"},"All rights reserved":{"my":"မူပိုင်ခွင့်အားလုံး ရယူထားပါသည်"},"Art from the house":{"my":"အိမ်အပြင်အဆင် လက်ရာများ"},"Ayar Min":{"en":"Arthur"},"Copyright © 2026 Leikpyar Hunters. Each work belongs to its creator. All rights reserved.":{"my":"မူပိုင်ခွင့် © 2026 Leikpyar Hunters။ လက်ရာတစ်ခုစီသည် ၎င်းတို့ဖန်တီးသူ၏မူပိုင်ဖြစ်သည်။ မူပိုင်ခွင့်အားလုံး ရယူထားပါသည်။"},"Creators":{"my":"ဖန်တီးသူများ"},"Dawn. You survived the night. The scanner battery is charged.":{"my":"အရုဏ်တက်ပြီ။ သင် ညကို အသက်ရှင်ကျော်လွှားခဲ့သည်။ စကင်နာဘက်ထရီ အားပြန်ပြည့်ပြီ။"},"Detect. Catch. Seal. Upgrade.":{"my":"ရှာဖွေ။ ဖမ်းဆီး။ ချိတ်ပိတ်။ အဆင့်မြှင့်။"},"Developer":{"my":"ဖန်တီးရေးသားသူ"},"Download, extract, copy, scrape, record or rip the models, textures, sounds, music, code or artwork from this website or from the game.":{"my":"ဤဝဘ်ဆိုက် သို့မဟုတ် ဂိမ်းမှ မော်ဒယ်၊ ပုံသဏ္ဌာန်ပုံရိပ်၊ အသံ၊ ဂီတ၊ ကုဒ် သို့မဟုတ် အနုပညာလက်ရာများကို ဒေါင်းလုဒ်ဆွဲခြင်း၊ ထုတ်ယူခြင်း၊ ကူးယူခြင်း၊ စုဆောင်းခြင်း၊ ရိုက်ကူးခြင်း မပြုရ။"},"Every creator keeps the rights to their own work. Please respect it.":{"my":"ဖန်တီးသူတိုင်းက မိမိလက်ရာ၏ အခွင့်အရေးကို ထိန်းသိမ်းထားပါသည်။ ကျေးဇူးပြု၍ လေးစားပါ။"},"Every night in the house follows the same work. Learn it once and the dark gets easier.":{"my":"အိမ်ထဲတွင် ညတိုင်း တူညီသောအလုပ်တစ်ခုကိုသာလုပ်ရသည်။ တစ်ကြိမ်သင်ယူလိုက်ပါ အမှောင်ဟာပိုမိုလွယ်ကူလာပါလိမ့်မည်။"},"Facts":{"my":"အချက်အလက်များ"},"Hunters":{"my":"မုဆိုးများ"},"Its lights climb as a ghost gets closer.":{"my":"သရဲနီးလာလေ ၎င်း၏မီးလုံးများ ပိုမိုလင်းလာလေ။"},"Leikpyar":{"my":"လိပ်ပြာ"},"Leikpyar Hunters / Spectral Agents is made of the work of four creators. Each creator holds the copyright of their own part: the game design, the sound and music, the code, and the 3D models, textures and artwork (the GCC house, the EM unit, the MEP capsule, the Faraday cage, the injector, the scanner, the Phantom Gun and almost all the other models of the game).":{"my":"Leikpyar Hunters / Spectral Agents သည် ဖန်တီးသူ ၄ ဦး၏ အနုပညာလက်ရာ ဖြစ်ပါသည်။ ဖန်တီးသူတစ်ဦးစီသည် မိမိအပိုင်း၏ မူပိုင်ခွင့်ကို ပိုင်ဆိုင်ပါသည် - ဂိမ်းဒီဇိုင်း၊ အသံနှင့် ဂီတ၊ ကုဒ်၊ ၃ဒီ မော်ဒယ်များ၊ ပုံသဏ္ဌာန်ပုံရိပ်များနှင့် အနုပညာလက်ရာများ (GCC အိမ်၊ EM စက်၊ MEP ဖန်ပြွန်၊ Faraday လှောင်အိမ်၊ ဆေးထိုးအပ်၊ စကင်နာ၊ Phantom Emitter သေနတ်နှင့် ဂိမ်း၏ အခြားမော်ဒယ်များ အားလုံးနီးပါး)။"},"Leikpyar Hunters, home":{"my":"လိပ်ပြာမုဆိုးများ၊ ပင်မစာမျက်နှာ"},"Leikpyar Hunters: a Myanmar horror game. Work the night shift as a spectral agent: scan the house, pull the orbs with the Phantom Gun, seal the souls and climb the leaderboard.":{"my":"Leikpyar Hunters - မြန်မာ သည်းထိတ်ရင်ဖိုဂိမ်း။ ဝိဉာဉ်ထိန်းအေးဂျင့်အဖြစ် ညဘက်တာဝန်ထမ်းဆောင်ပါ - စံအိမ်ကို စကင်န်ဖတ်ပါ၊ Phantom Emitter သေနတ်ဖြင့် ဝိညာဉ်များကို ဆွဲယူပါ၊ ဝိညာဉ်များကို ပိတ်လှောင်ပြီး အဆင့်သတ်မှတ်ချက်ဇယားတွင် အဆင့်တက်အောင်ဆောင်ရွက်ပါ။"},"Main":{"my":"ပင်မစာမျက်နှာ"},"Model by May Thinzar Khin":{"my":"မေသင်ဇာခင် ၏ လက်ရာ"},"More contributors":{"my":"အထောက်အပံ့ပေးသူများ"},"Nights played":{"my":"ကစားပြီးသည့် ညများ"},"On a phone you get a joystick, a look pad and big buttons. Tap the bar at the bottom for the gun, scanner and injector.":{"my":"ဖုန်းတွင် ရွေ့လျားမှုစခရင်၊ ကြည့်ရန်ထိတွေ့စခရင် နှင့် ခလုတ်အကြီးများ ရှိပါသည်။ သေနတ်၊ စကင်နာ၊ ဆေးထိုးအပ်အတွက် အောက်ခြေဘားကို နှိပ်ပါ။"},"One best night for each agent. A soul sealed is 100 points, a cage checked is 500, a night survived is 250.":{"my":"အေးဂျင့်တစ်ဦးစီ၏ အကောင်းဆုံးညတစ်ညကို ထည့်သွင်းပါသည်။ ဝိညာဉ်တစ်ခု ပိတ်လှောင်လျှင် ၁၀၀ မှတ်၊ လှောင်အိမ်တစ်ခု စစ်ဆေးလျှင် ၅၀၀ မှတ်၊ ညတစ်ညအသက်ရှင်လျှင် ၂၅၀ မှတ်။"},"Open the menu":{"my":"စာရင်းဖွင့်ရန်"},"Pick a codename and a password. The registry gives you an Agent ID. Use the same account on this page and inside the game, and your best night goes on the board.":{"my":"ကုဒ်အမည်နှင့် စကားဝှက်ကို ရွေးပါ။ မှတ်ပုံတင်ရုံးက အေးဂျင့် ID တစ်ခု ပေးပါမည်။ ဤစာမျက်နှာနှင့် ဂိမ်းထဲတွင် အကောင့်တူတူ သုံးပါ၊ သင့်အကောင်းဆုံးညသည် ဇယားပေါ်တက်လာပါမည်။"},"Play the game for your own enjoyment.":{"my":"သင့်ကိုယ်ပိုင်ဖျော်ဖြေရေးအတွက် ဂိမ်းကို ကစားနိုင်ပါသည်။"},"Pull the ghost, use the injector":{"my":"ဝိဉာဉ်ကို ဆွဲယူရန်၊ ဆေးထိုးအပ်ကို သုံးရန်"},"Pulls the orbs out of the dark. Watch its heat.":{"my":"အမှောင်ထဲမှ ဝိညာဉ် များကို ဆွဲထုတ်သည်။ အပူချိန်ကို ကြည့်ပါ။"},"Share a link to this page.":{"my":"ဤစာမျက်နှာ၏ လင့်ခ်ကို မျှဝေနိုင်ပါသည်။"},"Sound":{"my":"အသံပိုင်းပညာရှင်"},"Special thanks":{"my":"အထူးကျေးဇူးတင်ရမည့်ကူညီသူများ"},"Take out the EMF scanner and switch it on. Its lights climb as a ghost gets closer, and the red light means she is right here.":{"my":"EMF စကင်နာကို ထုတ်ပြီး ဖွင့်ပါ။ သရဲနီးလာလေ မီးလုံးများ ပိုလင်းလာလေဖြစ်ပြီး မီးနီလင်းလျှင် သူမ ဤနေရာတွင် ရှိနေပြီဟု ဆိုလိုသည်။"},"The Molecular Encapsulation Phial: a captured soul, sealed in glass.":{"my":"Molecular Encapsulation Phial - ဖမ်းမိထားသော ဝိညာဉ်ကို ဖန်ပြွန်ထဲတွင် ပိတ်လှောင်ထားပါသည်။"},"The NPC checks your cage and gives you a point. Spend it on the gun, the EM unit, the MEP or the radio.":{"en":"The GCC Worker checks your cage and gives you a point. Spend it on the gun, the EM unit, the MEP or the radio.","my":"GCC ဝန်ထမ်း က သင့်လှောင်အိမ်ကို စစ်ဆေးပြီး အမှတ်တစ်မှတ် ပေးပါလိမ့်မည်။ ထိုအမှတ်ကို သေနတ်၊ EM စက်၊ MEP သို့မဟုတ် ရေဒီယိုတွင် အသုံးပြုပါ။"},"The NPC is at the table. Hand in cages and upgrade.":{"en":"The GCC Worker is at the table. Hand in cages and upgrade.","my":"GCC ဝန်ထမ်းသည် စားပွဲတွင် ရှိနေပါသည်။ လှောင်အိမ်များ အပ်နှံပြီး အဆင့်မြှင့်ပါ။"},"The Phantom Gun pulls an orb out of the dark. Hold the pull, keep it aimed, and watch the heat: a hot gun lets the orb run.":{"my":"Phantom Emitter သေနတ်သည် အမှောင်ထဲမှ ဝိညာဉ်များကို ဆွဲထုတ်သည်။ မလွတ်အောင်ဆွဲထားပါ၊ အပူချိန်ကိုလည်း ကြည့်ပါ - သေနတ်ပူလာလျှင် ဝိညာဉ် ထွက်ပြေးမည်။"},"The extra instant-start storage needs the secure address (https). A small cookie remembers your version.":{"my":"ချက်ချင်းစနိုင်သော အပိုသိုလှောင်မှုအတွက် လုံခြုံသောလိပ်စာ (https) လိုအပ်သည်။ ကွတ်ကီးအသေးစားတစ်ခုက သင့်ဗားရှင်းကို မှတ်ထားပါမည်။"},"The game design: the rules, the nights and how Spectral Agents plays.":{"my":"ဂိမ်းဒီဇိုင်း - စည်းမျဉ်းများ၊ ညများနှင့် Spectral Agents ကစားနည်းဉပဒေများ။"},"The game files are saved here. The game starts at once, without a new download.":{"my":"ဂိမ်းဖိုင်များကို ဤနေရာတွင် သိမ်းထားပါသည်။ ဒေါင်းလုဒ်အသစ်မလိုဘဲ ဂိမ်းက ချက်ချင်းစနိုင်သည်။"},"The game runs in your browser. Its files are kept on your device, so the next visit starts at once. Your agent account works here and in the game.":{"my":"ဂိမ်းသည် သင့်ဘရောက်ဇာထဲတွင် အလုပ်လုပ်ပါသည်။ ဖိုင်များကို သင့်စက်ထဲတွင် သိမ်းထားသဖြင့် နောက်တစ်ကြိမ်ဝင်လျှင် ချက်ချင်းစနိုင်ပါသည်။ သင့်အေးဂျင့်အကောင့်သည် ဤနေရာနှင့် ဂိမ်းထဲတွင် အသုံးပြုနိုင်ပါသည်။"},"The generator. Walk an orb into it and it makes a MEP capsule.":{"my":"ဂျင်နရေတာ။ ဝိညာဉ်ကို ၎င်းအပေါ်သို့တင်လိုက်လျှင် MEP ဖန်ပြွန်ကို ထုတ်ပေးပါသည်။"},"The ghosts appear. The orbs hide in the rooms.":{"my":"သရဲများ စတင်ပေါ်လာမည်။ ဝိညာဉ် များသည် အခန်းများထဲတွင် ပုန်းနေတတ်ကြသည်။"},"The house and the props of the game were modeled by May Thinzar Khin. Turn them with your finger or the mouse. They can be viewed on this page only, they cannot be downloaded.":{"my":"ဂိမ်း၏ အိမ်နှင့် ပစ္စည်းများကို မေသင်ဇာခင် က မော်ဒယ်ပြုလုပ်ခဲ့ပါသည်။ လက်ချောင်း သို့မဟုတ် မောက်စ်ဖြင့် လှည့်ကြည့်နိုင်ပါသည်။ ဤစာမျက်နှာတွင်သာ ကြည့်ရှုနိုင်ပြီး ဒေါင်းလုဒ်ဆွဲခွင့်မရှိပါ။"},"The sound: the music, the voices and the sound effects.":{"en":"The sound: the music, the game voices and the sound effects.","my":"အသံ - ဂီတ၊ ဂိမ်းအသံများနှင့် အထူးအသံပြုလုပ်ချက်များ။"},"The time you joined and signed in, and whether you played on a phone or a computer.":{"my":"သင်ပါဝင်သည့်အချိန်၊ ဝင်ရောက်သည့်အချိန်နှင့် ဖုန်း သို့မဟုတ် ကွန်ပျူတာဖြင့် ကစားသည့်အချိန်။"},"The woman starts to walk the house. Hide when she comes.":{"my":"မိန်းမသည် အိမ်ထဲတွင် လျှောက်သွားစပြုလာမည်။ သူမ လာလျှင် ပုန်းပါ။"},"The work belongs to the people who made it":{"my":"အနုပညာလက်ရာများသည် ပြုလုပ်သူများ၏ ပိုင်ဆိုင်မှုဖြစ်ပါသည်"},"To delete your agent and all its data, or to ask a question, contact the team. See the license section.":{"my":"သင့်အေးဂျင့်နှင့် ဒေတာအားလုံးကို ဖျက်လိုလျှင် သို့မဟုတ် မေးခွန်းရှိလျှင် အဖွဲ့ကို ဆက်သွယ်ပါ။ လိုင်စင်အပိုင်းကို ကြည့်ပါ။"},"Upgrades, at the NPC":{"en":"Upgrades, at the GCC Worker","my":"အဆင့်မြှင့်ရန် (GCC ဝန်ထမ်း ဆီတွင်)"},"Use screenshots of the page or the game in a review or a news post, and name the creators: game design by Ayar Min, sound by Wai Yan Min Thu, code by Swan Htet, art by May Thinzar Khin.":{"my":"သုံးသပ်ချက် သို့မဟုတ် သတင်းပို့စ်တွင် ဂိမ်း၏ screenshot များကို သုံးနိုင်ပါသည်၊ ဖန်တီးသူများ၏အမည်ကို ဖော်ပြပါ - ဂိမ်းဒီဇိုင်း Ayar Min၊ အသံပိုင်း Wai Yan Min Thu၊ ကုဒ် Swan Htet၊ အနုပညာ May Thinzar Khin။"},"Use the work in any other game, app, film, print or product, for money or not.":{"my":"အခြားဂိမ်း၊ အက်ပ်၊ ရုပ်ရှင်၊ ပုံနှိပ်ထုတ်ဝေမှု သို့မဟုတ် ထုတ်ကုန်တွင် ငွေအတွက်ဖြစ်စေ/မဖြစ်စေ အသုံးမပြုရ။"},"View the models on this website, in your browser.":{"my":"ဤဝဘ်ဆိုက်ရှိ မော်ဒယ်များကို သင့်ဘရောက်ဇာတွင် ကြည့်ရှုနိုင်ပါသည်။"},"Wai Yan Min Thu":{"en":"CROSX"},"Walk the orb to the generator. It makes a MEP capsule. Put the MEP in a Faraday cage and hand it in at the Drop Table.":{"my":"ဝိညာဉ် ကို ဂျင်နရေတာဆီ ခေါ်သွားပါ။ ၎င်းက MEP ဖန်ပြွန်ကို ထုတ်ပေးပါလိမ့်မယ်။ MEP ကို Faraday လှောင်အိမ်ထဲထည့်ပြီး Drop Table တွင် အပ်နှံပါ။"},"What we keep, what we do not, and who can see it.":{"my":"ကျွန်ုပ်တို့ ထိမ်းသိမ်းသည့်အရာ၊ ခွင့်ပြုသည့်အရာနှင့် မည်သူမြင်နိုင်သည်ကို ဖော်ပြထားပါသည်။"},"You are a spectral agent on the night shift. Scan the old house, pull the glowing souls out of the dark, seal them and survive until dawn.":{"my":"သင်ဟာ ညဘက်တာဝန်ထမ်းဆောင်ရတဲ့ ဝိဉာဉ်ထိန်းအေးဂျင့် တစ်ဦးဖြစ်ပါတယ်။ အိမ်အဟောင်းကို စကင်န်ဖတ်ပါ၊ အမှောင်ထဲမှ တောက်ပနေသော ဝိညာဉ်များကို ဆွဲထုတ်ပြီး ချိတ်ပိတ်ကာ အရုဏ်တက်ချိန်အထိ အသက်ရှင်အောင်ကြိုးစားပါ။"},"You may not":{"my":"မလုပ်ရန်"},"Your codename, score and rank are shown on the public high score board. Nothing else about you is public. We do not sell your data and we do not share it with advertisers.":{"my":"သင့်ကုဒ်နာမည်၊ အမှတ်နှင့် အဆင့်ကို အများပြည်သူမြင်နိုင်သော အမြင့်ဆုံးအမှတ်ဘုတ်တွင် ပြသထားပါသည်။ သင့်အကြောင်း အခြားအရာများကို အများမမြင်ရပါ။ သင့်အချက်အလက်ကို မရောင်းချပါ၊ ကြော်ငြာနှင့်သက်ဆိုင်သူများနှင့်လည်း မမျှဝေပါ။"},"© 2026 Ayar Min. All rights reserved.":{"en":"© 2026 Arthur. All rights reserved."},"© 2026 Wai Yan Min Thu. All rights reserved.":{"en":"© 2026 CROSX. All rights reserved."}},"images":{"/favicon.ico":"/uploads/1cee8265eb79.png","/img/apple-touch-icon.png":"/uploads/1cee8265eb79.png","/img/crew/artist.webp":"/uploads/32b63191c55a.webp","/img/crew/developer.webp":"/uploads/978e12f58578.webp","/img/crew/game-designer.webp":"/uploads/cc5b4d3e52fa.webp","/img/crew/sound.webp":"/uploads/0a148affbc01.webp","/img/favicon-192.png":"/uploads/1cee8265eb79.png","/img/favicon-32.png":"/uploads/1cee8265eb79.png","/img/logo-symbol.png":"/uploads/1cee8265eb79.png"},"pages":{},"settings":{"creatorLinks":{"developer":"https://swannhtet.com/"}},"credits":[{"name":"Realistic Lightning Pack","role":"Unity","roleMy":"Unity","note":"© Todonero","noteMy":"© Todonero","link":"https://assetstore.unity.com/packages/vfx/particles/spells/realistic-lightning-pack-165159","image":"/uploads/2fd6a51c8b88.webp"},{"name":"Ghostly Woman","role":"Sketchfab","roleMy":"Sketchfab","note":"© lucadelux8","noteMy":"© lucadelux8","link":"https://sketchfab.com/3d-models/ghostly-woman-aadad446802e4f35899730d72c2f968d","image":"/uploads/2264ebaffc0e.webp"},{"name":"Magical Orb","role":"Sketchfab","roleMy":"Sketchfab","note":"© tamminen","noteMy":"© tamminen","link":"https://sketchfab.com/3d-models/magical-orb-5e2e0ac919cb4d30ac022133086c088c","image":"/uploads/2264ebaffc0e.webp"},{"name":"Soul Eyes Demon","role":"Sketchfab","roleMy":"Sketchfab","note":"© MakeCrow","noteMy":"© MakeCrow","link":"https://sketchfab.com/3d-models/soul-eyes-demon-banshee-enemy-de21d5c688c74baa8b040583","image":"/uploads/2264ebaffc0e.webp"},{"name":"Animated Butterfly","role":"Sketchfab","roleMy":"Sketchfab","note":"© Artistic_side","noteMy":"© Artistic_side","link":"https://sketchfab.com/3d-models/animated-butterfly-d4fbcbaab845402999f30c5aa75851e6","image":"/uploads/2264ebaffc0e.webp"}],"thanks":[{"name":"Sora Tang","role":"Music","roleMy":"Music","note":"© Sora Tang","noteMy":"© Sora Tang","image":"/uploads/1a9101ba6321.webp","sounds":[{"title":"Verse Vocal","artist":"Sora Tang","file":"/uploads/eae6829a2b0e.mp3"},{"title":"Echo's Calling","artist":"Sora Tang","file":"/uploads/10a7bd117038.mp3"}]},{"name":"April","role":"Woman Ghost's SFX","roleMy":"Woman Ghost's SFX","note":"© April","noteMy":"© April","image":"/uploads/c63e2fb964a6.webp","sounds":[]}]};</script>
+<script src="/js/i18n-my.js?v=93444072" defer></script>
+<script src="/js/content.js?v=93444072" defer></script>
+<script src="/js/i18n.js?v=93444072" defer></script>
+<script src="/js/showcase.js?v=93444072" defer></script>
+<script src="/js/music.js?v=93444072" defer></script>
+</body>
+</html>

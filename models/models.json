@@ -1,0 +1,74 @@
+[
+  {
+    "id": "em-tethering-unit",
+    "title": "EM Tethering Unit",
+    "description": "The generator. Walk an orb into it and it makes a MEP capsule.",
+    "file": "em-tethering-unit.glb",
+    "author": "May Thinzar Khin",
+    "tags": [
+      "Prop",
+      "Game ready"
+    ],
+    "year": 2026
+  },
+  {
+    "id": "mep-capsule",
+    "title": "MEP Capsule",
+    "description": "The Molecular Encapsulation Phial: a captured soul, sealed in glass.",
+    "file": "mep-capsule.glb",
+    "author": "May Thinzar Khin",
+    "tags": [
+      "Prop",
+      "Game ready"
+    ],
+    "year": 2026
+  },
+  {
+    "id": "faraday-cage",
+    "title": "Faraday Cage",
+    "description": "The cage that carries a MEP to the Drop Table.",
+    "file": "faraday-cage.glb",
+    "author": "May Thinzar Khin",
+    "tags": [
+      "Prop",
+      "Game ready"
+    ],
+    "year": 2026
+  },
+  {
+    "id": "injector",
+    "title": "Injector",
+    "description": "Heals you when the night gets close.",
+    "file": "injector.glb",
+    "author": "May Thinzar Khin",
+    "tags": [
+      "Prop",
+      "Game ready"
+    ],
+    "year": 2026
+  },
+  {
+    "id": "emf-scanner",
+    "title": "EMF Scanner",
+    "description": "Its lights climb as a ghost gets closer.",
+    "file": "emf-scanner.glb",
+    "author": "May Thinzar Khin",
+    "tags": [
+      "Prop",
+      "Game ready"
+    ],
+    "year": 2026
+  },
+  {
+    "id": "phantom-gun",
+    "title": "Phantom Gun",
+    "description": "Pulls the orbs out of the dark. Watch its heat.",
+    "file": "phantom-gun.glb",
+    "author": "May Thinzar Khin",
+    "tags": [
+      "Prop",
+      "Game ready"
+    ],
+    "year": 2026
+  }
+]
